@@ -1,0 +1,7 @@
+.article {
+    .content {
+        ::ng-deep img {
+            width: 100%;
+        }
+    }
+}

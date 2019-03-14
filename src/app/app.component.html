@@ -1,0 +1,13 @@
+<div class="container px-0">
+    <app-header></app-header>
+
+    <app-main-grid>
+        <app-loading grid-main [loading]="loading">
+            <router-outlet></router-outlet>
+        </app-loading>
+
+        <app-sidebar grid-aside></app-sidebar>
+    </app-main-grid>
+
+    <app-footer></app-footer>
+</div>

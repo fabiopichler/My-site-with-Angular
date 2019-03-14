@@ -1,0 +1,9 @@
+<app-base-section title="Redes Sociais" titleicon="fas fa-users">
+    <div class="social d-flex justify-content-center">
+        <span *ngFor="let item of list" class="mx-2">
+            <a [href]="item.url" [title]="item.title" target="_blank">
+                <span [class]="item.icon"></span>
+            </a>
+        </span>
+    </div>
+</app-base-section>

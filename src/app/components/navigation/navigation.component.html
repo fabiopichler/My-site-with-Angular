@@ -1,0 +1,12 @@
+<nav>
+    <ul class="nav">
+        <li *ngFor="let item of items" class="nav-item">
+            <a [routerLink]="[item.to]" routerLinkActive="router-link-exact-active" [routerLinkActiveOptions]="{exact:
+                true}" class="nav-link text text-secondary">
+                <span [class]="item.icon"></span>
+                
+                <span class="d-none d-sm-inline-block">&nbsp;{{ item.text }}</span>
+            </a>
+        </li>
+    </ul>
+</nav>
